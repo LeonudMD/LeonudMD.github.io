@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--Зиновьев Леонид 22ВП2 Вариант:10-->
+<html>
+    <head>
+        <title>Laba №3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class = "zagolovok1">Laboratory work № 3 --- Option № 10.</div>
+        <div class ="zagolovok2">Задание:  Расчет объема различных трехмерных 
+            фигур (результат расчета выводить в таблицу)
+        </div>
+        
+        <label class="zagolovok2" for="shapeSelect">Выберите фигуру:</label>
+        <select id="shapeSelect" onchange="showFields()">
+          <option class ="zagolovok4" value="">Выберите фигуру</option>
+          <option class ="zagolovok4" value="cube">Куб</option>
+          <option class ="zagolovok4" value="cylinder">Цилиндр</option>
+          <option class ="zagolovok4" value="konus">Конус</option>
+        </select>
+        
+        <div id="cubeFields" style="display:none;">
+            <label class="zagolovok2" for="cubeSide">Введите длину стороны куба:</label>
+            <input class ="input" type="number" id="cubeSide">
+        </div>
+        <button
+            class = "firstButton" id ="kubButton" style="display:none;"
+            onclick="calculateKub(resultKub)">Рассчитать! 
+        </button>
+
+        <div id="cylinderFields" style="display:none;">
+          <label class="zagolovok2" for="cylinderRadius">Введите радиус цилиндра:</label>
+          <input class ="input" type="number" id="cylinderRadius" name="cylinderRadius">
+          <label class="zagolovok2" for="cylinderHeight">Введите высоту цилиндра:</label>
+          <input class ="input" type="number" id="cylinderHeight" name="cylinderHeight">
+        </div>
+        <button
+            class = "firstButton" id ="cylinderButton" style="display:none;"
+            onclick="calculateСylinder(cylRadius, cylHeight)">
+            Рассчитать! 
+        </button>
+        
+        <div id ="KonusFields" style="display:none;"> 
+          <label class="zagolovok2" for="konusRadius">Введите радиус конуса:</label>
+          <input class ="input" type="number" id="konusRadius" name="konusRadius">
+          <label class="zagolovok2" for="konusObraz">Высота конуса:</label>
+          <input class ="input" type="number" id="konusObraz" name="konusObraz">
+        </div>
+        <button
+            class = "firstButton" id ="konusButton" style="display:none;"
+            onclick="calculateKonus(radiusKonus, obrazKonus)">Рассчитать! 
+        </button>
+        <table class ="S" id ="S">
+            <th class = "zagolovok2">Объём фигуры:</th>
+            <th class ="zagolovok2" id = "Ss"></th>
+        </table>
+        <table class ="result" id="results">
+            <tr class = "tr">
+              <th class = "zagolovok3"> Фигура</th>
+              <th class = "zagolovok3">Сторона куба</th>
+              <th class = "zagolovok3">Радиус фигуры</th>
+              <th class = "zagolovok3">Высота цилиндра</th>
+              <th class = "zagolovok3">Высота конуса</th>
+              <th class = "zagolovok3">Объём фигуры</th>
+            </tr>
+        </table>
+        
+        
+        <script src="js/JsHard.js" type="text/javascript"></script>
+    </body>
+</html>

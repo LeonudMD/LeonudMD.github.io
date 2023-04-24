@@ -1,0 +1,122 @@
+body {
+    background-image: url("fonBlackTree.jpg");
+    height: 200%;
+    width: 100%;
+}
+
+table {
+  margin: 0 auto;
+}
+
+@font-face 
+        {
+            font-family: Rocket;
+            src: url("Rocket.ttf");
+        }
+        
+.zagolovok1{
+    color: #fff;
+    font-size:70px;
+    font-weight:600;
+    font-family: Rocket;
+    margin-top: 10px;
+    animation: flicker .5s infinite alternate;   
+    text-shadow:
+        /* белый свет */
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 5px #fff,
+        /* зеленый свет */
+        0 0 11px #0fa,
+        0 0 20px #0fa,
+        0 0 30px #0fa,
+        0 0 55px #0fa,
+        0 0 80px #0fa;
+}
+
+.zagolovok2{
+    margin-top: 70px;
+    color: #fff;
+    font-size:40px;
+    font-weight:400;
+    font-family: Courier;   
+    text-shadow:
+        /* белый свет */
+        0 0 1px #fff,
+        0 0 2px #fff,
+        0 0 5px #fff,
+        /* зеленый свет */
+        0 0 11px #0CE8DD,
+        0 0 20px #0CE8DD,
+        0 0 30px #0CE8DD,
+        0 0 55px #0CE8DD,
+        0 0 80px #0CE8DD;
+}
+
+.firstButton {
+    margin-top: 40px;
+    margin-bottom:40px;
+    margin-left: 30px;
+    color: #58AFFF;
+    border: .4rem solid #58AFFF;
+    border-radius: 1rem;
+    background: transparent;
+    font-size: 30px;
+    padding: .8rem;
+    font-family: Courier;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0 0 0.5em 0 #58AFFF, 0 0 0.5em 0 #58AFFF
+}
+
+.firstButton:hover {
+    transition: 0.3s;
+    background: #0CD5E8;
+    color: #fff;
+    box-shadow: 0 0 2em 0.5em #0CD5E8;
+}
+
+.firstButton:active {
+    background-color: #00FFAA;
+    transition: 0.2s;
+}
+
+.input{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16pt;
+    box-shadow: 2px 2px 2px 2px #0fa;
+}
+
+.result {
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    border: 3px solid #0DCBFF;
+}
+
+.tr {
+   border: 1px solid #0DCBFF;
+}
+
+.zagolovok3{
+    border: 1px solid #0DCBFF;
+    font-size: 20pt;
+    font-family: Courier New;
+    color:#0DCBFF
+}
+
+#shapeSelect{
+    opacity: 1;
+    font-size:20px;
+    background-image: url("fonBlackTree.jpg");
+    color: white;
+}
+
+.zagolovok4{
+    border: 1px solid #0fa;
+    font-size: 20pt;
+    font-family: Courier New;
+    color:black;
+}
